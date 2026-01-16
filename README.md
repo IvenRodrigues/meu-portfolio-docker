@@ -32,8 +32,7 @@ Foi muito massa fazer esse projeto porque aprendi a:
 * Usar **Volumes** para não perder os dados do banco quando desligo o container.
 * Configurar **Redes (Networks)** para o Adminer achar o Postgres pelo nome.
 * Proteger minhas senhas usando variáveis de ambiente (`.env`).
-* Resolver conflitos de portas (tive que mudar a porta do Adminer uma hora!).
+* Resolver conflitos de portas (tive que mudar a porta do Adminer).
 
 ------
-Feito com 💻 e ☕ por ** Iven Rodrigues **
-------
+Feito com 💻 e ☕ por **Iven Rodrigues**
