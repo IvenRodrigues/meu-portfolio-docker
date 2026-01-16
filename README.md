@@ -34,7 +34,6 @@ Foi muito massa fazer esse projeto porque aprendi a:
 * Proteger minhas senhas usando variáveis de ambiente (`.env`).
 * Resolver conflitos de portas (tive que mudar a porta do Adminer uma hora!).
 
----
-<<<<<<< HEAD
+------
 Feito com 💻 e ☕ por ** Iven Rodrigues **
-=======
+------
