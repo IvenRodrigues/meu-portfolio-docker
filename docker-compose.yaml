@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  # SERVIÇO 1: O Banco de Dados (PostgreSQL)
+  db_banco:
+    image: postgres:15
+    container_name: meu_postgres_pro
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./dados_banco:/var/lib/postgresql/data # Persistência!
+
+  # SERVIÇO 2: O Gerenciador Visual (Adminer)
+  adminer_gui:
+    image: adminer
+    container_name: meu_adminer
+    restart: always
+    ports:
+      - "8080:8080" # Vamos acessar em localhost:8080
+    depends_on:
+      - db_banco # Só liga se o banco estiver ligado
+
+  # SERVIÇO 3: O Website (Nginx)
+  website:
+    image: nginx:alpine
+    container_name: meu_site_institucional
+    restart: always
+    ports:
+      - "8000:80" # Vamos acessar em localhost:8000
+    volumes:
+      - ./site:/usr/share/nginx/html # Nosso HTML vai aqui
