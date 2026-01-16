@@ -35,4 +35,4 @@ Foi muito massa fazer esse projeto porque aprendi a:
 * Resolver conflitos de portas (tive que mudar a porta do Adminer uma hora!).
 
 ---
-Feito com 💻 e ☕ por **[Seu Nome]**
+Feito com 💻 e ☕ por **Iven Rodrigues**
