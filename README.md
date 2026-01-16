@@ -20,7 +20,7 @@ Eu configurei 3 serviços que conversam entre si:
 Se você quiser testar na sua máquina:
 
 1.  Clone o repositório.
-2.  Crie um arquivo `.env` na pasta raiz (olhe o `.env.example` se tiver) com as senhas.
+2.  Crie um arquivo `.env` na pasta raiz (olhe o `.env.example`) com as senhas.
 3.  Rode o comando mágico:
     ```bash
     docker compose up -d
